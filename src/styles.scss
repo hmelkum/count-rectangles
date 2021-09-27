@@ -18,6 +18,12 @@ html, body {
   padding: 0;
 }
 
+@mixin center-content() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .glass {
   background-color: rgb(255, 255, 255, 0.2);
 

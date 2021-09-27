@@ -1,7 +1,9 @@
 <div id="board" class="glass">
   <div *ngFor="let r of board" class="board-row">
-    <div *ngFor="let c of r" class="board-cell">
+    <div *ngFor="let c of r" class="board-col">
+      <div class="board-cell">
+        <app-node></app-node>
+      </div>
     </div>
   </div>
-
 </div>

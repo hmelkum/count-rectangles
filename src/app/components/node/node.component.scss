@@ -1,0 +1,30 @@
+@import "../../../styles.scss";
+
+.node{
+  width: 100%;
+  height: 100%;
+
+  &-outer{
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--purple);
+
+    border-radius: 50%;
+
+    box-shadow: var(--box-shadow);
+
+    @include center-content();
+  }
+
+  &-inner{
+    width: calc(2 / 3 * 100%);
+    height: calc(2 / 3 * 100%);
+
+    background-color: var(--blue);
+
+    border-radius: 50%;
+
+    box-shadow: var(--box-shadow);
+  }
+}
