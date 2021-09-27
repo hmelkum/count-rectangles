@@ -9,9 +9,22 @@
   --purple: #C7C0F1;
 
   --box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+
 }
 
 html, body {
   margin: 0;
   padding: 0;
+}
+
+.glass {
+  background-color: rgb(255, 255, 255, 0.2);
+
+  border-left: 2px solid rgb(255, 255, 255, 0.2);
+  border-top: 2px solid rgb(255, 255, 255, 0.2);
+  border-right: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(30px);
 }
