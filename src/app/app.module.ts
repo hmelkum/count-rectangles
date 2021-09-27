@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { BoardComponent } from './components/board/board.component';
+import { EraserComponent } from './components/eraser/eraser.component';
 import { NodeComponent } from './components/node/node.component';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { NodeComponent } from './components/node/node.component';
     AppComponent,
     BackgroundComponent,
     BoardComponent,
-    NodeComponent
+    NodeComponent,
+    EraserComponent
   ],
   imports: [
     BrowserModule,
