@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --dark-blue: #06102C;
+  --dark-purple: #AC9DFF;
+
+  --blue: #236588;
+  --pink: #FF9B9B;
+  --purple: #C7C0F1;
+
+  --box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}

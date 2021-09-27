@@ -1,0 +1,44 @@
+#background {
+  width: 100%;
+  height: 110vh;
+
+  background: var(--dark-blue);
+
+  .background-circle {
+    border-radius: 50%;
+
+    box-shadow: var(--box-shadow);
+
+    position: absolute;
+  }
+
+  &-circle-1 {
+    width: 50vh;
+    height: 50vh;
+
+    background-image: linear-gradient(to right bottom, var(--blue), var(--dark-blue));
+
+    left: 10vh;
+    top: 5vh;
+  }
+
+  &-circle-2 {
+    width: 37.5vh;
+    height: 37.5vh;
+
+    background-image: linear-gradient(to left top, var(--dark-purple), var(--dark-blue));
+
+    right: 30vh;
+    bottom: -20vh;
+  }
+
+  &-circle-3 {
+    width: 25vh;
+    height: 25vh;
+
+    background-image: linear-gradient(to left bottom, var(--pink), var(--dark-blue));
+
+    top: 10vh;
+    right: 20vh;
+  }
+}
