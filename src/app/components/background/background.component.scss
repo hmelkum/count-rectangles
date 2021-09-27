@@ -1,6 +1,6 @@
 #background {
   width: 100%;
-  height: 110vh;
+  height: calc(100vh + min(10vw, 10vh));
 
   background: var(--dark-blue);
 
@@ -13,32 +13,32 @@
   }
 
   &-circle-1 {
-    width: 50vh;
-    height: 50vh;
+    width: min(50vw, 50vh);
+    height: min(50vw, 50vh);
 
     background-image: linear-gradient(to right bottom, var(--blue), var(--dark-blue));
 
-    left: 10vh;
-    top: 5vh;
+    left: min(5vw, 10vh);
+    top: max(5vw, 5vh);
   }
 
   &-circle-2 {
-    width: 37.5vh;
-    height: 37.5vh;
+    width: min(37.5vw, 37.5vh);
+    height: min(37.5vw, 37.5vh);
 
     background-image: linear-gradient(to left top, var(--dark-purple), var(--dark-blue));
 
-    right: 30vh;
-    bottom: -20vh;
+    right: min(30vw, 30vh);
+    bottom: max(-20vw, -20vh);
   }
 
   &-circle-3 {
-    width: 25vh;
-    height: 25vh;
+    width: min(25vw, 25vh);
+    height: min(25vw, 25vh);
 
     background-image: linear-gradient(to left bottom, var(--pink), var(--dark-blue));
 
-    top: 10vh;
-    right: 20vh;
+    top: min(10vw, 10vh);
+    right: min(10vw, 25vh);
   }
 }
