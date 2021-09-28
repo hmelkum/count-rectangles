@@ -7,6 +7,7 @@ import { BackgroundComponent } from './components/background/background.componen
 import { BoardComponent } from './components/board/board.component';
 import { EraserComponent } from './components/eraser/eraser.component';
 import { NodeComponent } from './components/node/node.component';
+import { ToolsComponent } from './components/tools/tools.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NodeComponent } from './components/node/node.component';
     BackgroundComponent,
     BoardComponent,
     NodeComponent,
-    EraserComponent
+    EraserComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,

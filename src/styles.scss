@@ -18,6 +18,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  font-size: 20px;
+}
+
 @mixin center-content() {
   display: flex;
   align-items: center;

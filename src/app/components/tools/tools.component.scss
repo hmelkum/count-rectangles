@@ -1,0 +1,67 @@
+@import "../../../styles.scss";
+
+.tools {
+  width: 100px;
+  height: 460px;
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  &-brushes {
+    width: 100px;
+    height: 200px;
+
+    border-radius: 50px;
+
+    @include center-content();
+    flex-direction: column;
+
+    app-node {
+      margin: 1em;
+      width: 60px;
+      height: 60px;
+    }
+
+    app-eraser {
+      margin: 1em;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &-btn{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50px;
+
+    @include center-content();
+
+    app-node {
+      width: 80px;
+      height: 80px;
+    }
+
+    app-eraser {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+app-node {
+  transition: 0.4s;
+}
+app-node:active{
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+app-eraser {
+  transition: 0.4s;
+}
+app-eraser:active{
+  transform: scale(0.9);
+  transition: 0.2s;
+}
