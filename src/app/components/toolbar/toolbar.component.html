@@ -1,6 +1,6 @@
 <div class="toolbar">
   <div class="toolbar-brushes glass">
-    <app-node></app-node>
+    <app-node [ngClass]="brush == BrushType.Node ? 'brush-active' : ''" (click)="onNodeBrushClk()"></app-node>
 
     <app-eraser></app-eraser>
   </div>

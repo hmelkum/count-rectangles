@@ -54,14 +54,30 @@ app-node {
   transition: 0.4s;
 }
 app-node:active{
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: 0.2s;
 }
+// app-node:hover{
+//   filter: grayscale(50%);
+// }
 
 app-eraser {
   transition: 0.4s;
 }
 app-eraser:active{
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: 0.2s;
 }
+
+// app-eraser:hover{
+//   filter: grayscale(50%);
+// }
+
+.brush-active {
+  transform: scale(0.8);
+  transition: 0.2s;
+}
+
+// .toolbar:hover{
+//   filter: grayscale(50%);
+// }

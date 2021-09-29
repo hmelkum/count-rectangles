@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BrushType } from 'src/app/enums/brush-type.enum';
+import { ToolbarService } from 'src/app/services/toolbar.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolBarComponent implements OnInit {
 
-  constructor() { }
+  BrushType = BrushType;
+
+  brush: BrushType = BrushType.None;
+
+  constructor(private toolbarService: ToolbarService) {
+  }
 
   ngOnInit() {
+    this.toolbarService.BrushObservable.subscribe((brush: BrushType) => {
+      this.brush = brush
+    });
+  }
+
+  onNodeBrushClk() {
+    if (this.brush == BrushType.None) {
+      this.toolbarService.next(BrushType.Node);
+      return;
+    }
+
+    this.toolbarService.next(BrushType.None);
   }
 
 }
