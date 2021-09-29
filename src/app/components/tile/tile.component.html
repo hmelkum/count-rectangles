@@ -1,0 +1,5 @@
+<div class="tile" (click)="onTileClk()" (mouseenter)="onTileMouseEnter()" (mouseleave)="onTileMouseLeave()">
+  <app-node *ngIf="isSelected || (isHovered && brush == BrushType.Node)"></app-node>
+
+  <app-eraser *ngIf="isHovered && brush == BrushType.Eraser" [ngClass]="isSelected ? 'ready-eraser' : ''"></app-eraser>
+</div>

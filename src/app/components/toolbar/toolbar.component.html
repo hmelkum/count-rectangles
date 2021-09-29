@@ -5,11 +5,11 @@
     <app-eraser [ngClass]="brush == BrushType.Eraser ? 'brush-active' : ''" (click)="onEraserBrushClk()"></app-eraser>
   </div>
 
-  <div class="toolbar-btn glass">
+  <div class="toolbar-btn glass" (click)="onFillBrushClk()">
     <app-node></app-node>
   </div>
 
-  <div class="toolbar-btn glass">
+  <div class="toolbar-btn glass" (click)="onClearBrushClk()">
     <app-eraser></app-eraser>
   </div>
 </div>

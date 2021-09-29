@@ -1,5 +1,7 @@
 export enum BrushType {
   None,
   Node,
-  Eraser
+  Eraser,
+  Fill,
+  Clear
 }

@@ -7,6 +7,7 @@ import { BackgroundComponent } from './components/background/background.componen
 import { BoardComponent } from './components/board/board.component';
 import { EraserComponent } from './components/eraser/eraser.component';
 import { NodeComponent } from './components/node/node.component';
+import { TileComponent } from './components/tile/tile.component';
 import { ToolBarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ToolBarComponent } from './components/toolbar/toolbar.component';
     BoardComponent,
     NodeComponent,
     EraserComponent,
+    TileComponent,
     ToolBarComponent
   ],
   imports: [

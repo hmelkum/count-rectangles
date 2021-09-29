@@ -39,4 +39,14 @@ export class ToolBarComponent implements OnInit {
 
     this.brushService.next(BrushType.None);
   }
+
+  onFillBrushClk(){
+    this.brushService.next(BrushType.Fill);
+    this.brushService.next(BrushType.None);
+  }
+
+  onClearBrushClk() {
+    this.brushService.next(BrushType.Clear)
+    this.brushService.next(BrushType.None);
+  }
 }
