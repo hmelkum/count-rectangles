@@ -13,7 +13,7 @@ export class BrushService {
     this.subject = new Subject<BrushType>();
   }
 
-  get Subject(): Subject<BrushType> {
+  get Observable(): Observable<BrushType> {
     return this.subject;
   }
 
