@@ -9,16 +9,27 @@ import { EraserComponent } from './components/eraser/eraser.component';
 import { NodeComponent } from './components/node/node.component';
 import { TileComponent } from './components/tile/tile.component';
 import { ToolBarComponent } from './components/toolbar/toolbar.component';
+import { ControlsComponent } from './pages/controls/controls.component';
+import { IntroComponent } from './pages/intro/intro.component';
+import { LandingComponent } from './pages/landing/landing.component';
+import { ToolsComponent } from './pages/tools/tools.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // Components
     BackgroundComponent,
     BoardComponent,
     NodeComponent,
     EraserComponent,
     TileComponent,
-    ToolBarComponent
+    ToolBarComponent,
+
+    // Pages
+    LandingComponent,
+    IntroComponent,
+    ToolsComponent,
+    ControlsComponent
   ],
   imports: [
     BrowserModule,
