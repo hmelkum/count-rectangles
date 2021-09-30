@@ -1,20 +1,24 @@
 #landing {
   width: 100%;
   height: calc(100vh + min(20vw, 20vh));
+
+  main {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-app-toolbar {
-  position: absolute;
-  top: 10%;
-  left: 10%;
+@media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
 }
 
-app-board {
-  position: absolute;
-  top: 50%;
-  left: 50%;
 
-  transform: translate(-50%, -50%);
-
-  z-index: 1;
-}

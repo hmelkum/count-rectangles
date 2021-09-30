@@ -8,7 +8,7 @@
   // flex-flow: wrap;
 
   &-title-wrapper {
-    width: 50%;
+    width: 20vw;
     height: 100%;
 
     text-align: end;
@@ -27,7 +27,7 @@
   }
 
   main {
-    padding: 6em;
+    width: 80vw;
     @include center-content();
   }
 }

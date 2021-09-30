@@ -39,3 +39,9 @@ html {
 
   backdrop-filter: blur(30px);
 }
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
